@@ -1,0 +1,19 @@
+<h1>Tempreture Converter</h1>
+
+
+<table class='table' >
+  <thead>
+    <tr>
+      <th>Temp. (C)</th>
+      <th>Temp. (F)</th>
+      <th>Temp. (K)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" [(ngModel)]="tempValues.temperatureC" (change)="onValueChange(1);"></td>
+      <td><input type="text" [(ngModel)]="tempValues.temperatureF" (change)="onValueChange(2);"></td>
+      <td><input type="text" [(ngModel)]="tempValues.temperatureK" (change)="onValueChange(3);"></td>
+    </tr>
+  </tbody>
+</table>
